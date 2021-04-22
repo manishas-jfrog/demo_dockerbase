@@ -66,15 +66,15 @@ pipelines:
           outputResources:
             - name: docker_sample_build
 
-      - name: promote_dbp_build
-        type: PromoteBuild
-        configuration:
-          affinityGroup: docker_group
-          targetRepository: {{ .Values.promotedRepository }}
-          copy: true
-          integrations:
-            - name: {{ .Values.artifactory }}
-          inputResources:
-            - name: docker_sample_build
-          outputResources:
-            - name: docker_promoted_build
+      # - name: promote_dbp_build
+      #   type: PromoteBuild
+      #   configuration:
+      #     affinityGroup: docker_group
+      #     targetRepository: {{ .Values.promotedRepository }}
+      #     copy: true
+      #     integrations:
+      #       - name: {{ .Values.artifactory }}
+      #     inputResources:
+      #       - name: docker_sample_build
+      #     outputResources:
+      #       - name: docker_promoted_build
