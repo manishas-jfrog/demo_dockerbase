@@ -1,4 +1,6 @@
 artifactory: demoArt
 gitProvider: manishas_jfrog
 repoPath: manishas-jfrog/demo_env_dockerbase
-imageName: demo.jfrog-pipelines.com/docker-local/dockersample
+imageName: demo.jfrog-pipelines.com/proj1-docker-local/dockersample
+promotedRepository: proj1-docker-promoted
+sourceRepository: proj1-docker-local
